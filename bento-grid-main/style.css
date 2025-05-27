@@ -22,6 +22,7 @@
 body{
     background-color: #cedde6;
     height: 100vh;
+    margin: 30px 50px;
 }
 
 main.bento-grid{
@@ -86,7 +87,10 @@ main.bento-grid{
     width: 100%;
     justify-content: center;
 }
-
+.card1 > .container .span-lg {
+    font-size: 50px;
+    font-weight: bold;
+}
 /*schedule to social media*/
 .card4 {
   grid-column: 4 / span 1; 
