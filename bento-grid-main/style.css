@@ -26,10 +26,12 @@ body{
 }
 
 main.bento-grid{
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows:repeat(4,1fr);
     gap: 20px;
+    width: 74%;
 }
 
 .img img {
@@ -38,7 +40,6 @@ main.bento-grid{
   height: auto;
   display: block;
   margin: 0;
-  border: 2px solid;
 }
 
 
@@ -46,7 +47,6 @@ main.bento-grid{
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
   border-radius: 20px;
   padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.158);
 }
 
 /*create and schedule*/
@@ -91,13 +91,36 @@ main.bento-grid{
     font-size: 50px;
     font-weight: bold;
 }
+
+.card1 > .container span.destaque {
+    color: var(--Yellow500);
+}
+
+
 /*schedule to social media*/
 .card4 {
   grid-column: 4 / span 1; 
   grid-row: 1 / span 2;     
   background-color: var(--Purple100);
+  overflow: hidden;
 }
 
+.card4 > .container .span-lg{
+    font-size: 40px;
+}
+
+.card4 > .container > .img img{
+
+    width: 100%;
+    max-width: 300px;
+
+    height: auto;
+    display: block;
+    margin: 0;
+
+    position: relative;
+    transform: translateX(50%);
+}
 
 /*manage multiple accout and platforms*/
 .card2 {
@@ -112,8 +135,19 @@ main.bento-grid{
   grid-column: 3 / span 1; 
   grid-row: 2 / span 1;     
   background-color: var(--Yellow500);
+  overflow: hidden;
 }
+.card3 .container > .img img {
+    width: 100%;
+    max-width: 250px;
+    
+    height: auto;
+    display: block;
 
+    margin-top: 30px;
+    position: relative;
+    transform: translateY(50%);
+}
 /*Write your content using AI.*/
 .card8 {
   grid-column: 1 / span 1;
