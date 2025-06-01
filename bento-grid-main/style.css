@@ -26,12 +26,12 @@ body{
 }
 
 main.bento-grid{
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:repeat(4,1fr);
-    gap: 20px;
-    width: 74%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows:repeat(4,1fr);
+  gap: 20px;
+  width: 74%;
 }
 
 .img img {
@@ -128,6 +128,10 @@ main.bento-grid{
   grid-row: 2 / span 1;    
   background-color: var(--White);
 }
+.card2 > .container > span{
+  font-size: 30px;
+
+}
 
 
 /*Maintain a consistent posting schedule*/
@@ -148,11 +152,17 @@ main.bento-grid{
     position: relative;
     transform: translateY(50%);
 }
+.card3 > .container > span{
+  font-size: 30px;
+}
 /*Write your content using AI.*/
 .card8 {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
   background-color: var(--Yellow500);
+}
+.card8 > .container > span{
+  font-size: 30px;
 }
 
 
@@ -161,6 +171,15 @@ main.bento-grid{
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
   background-color: var(--White);
+}
+.card6 > .container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.card6 > .container > span > p{
+  font-size: 40px;
 }
 
 /*Grow followers with non-stop content.*/
@@ -171,6 +190,119 @@ main.bento-grid{
   color: var(--White);
 }
 
+.card5 > .container{
+  display: flex;
+  flex-flow:row;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:990px) {
+  body{
+    margin: 20px 15px;
+    height: auto;
+    min-height: 100vh;
+  }
+  main.bento-grid{
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+   /* Resetar a posição explícita de grid para todos os cards */
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+      grid-column: auto; /* Deixa o grid decidir a coluna (será a única) */
+      grid-row: auto;    /* Deixa o grid decidir a linha (sequencial) */
+      padding: 1rem;     /* Manter ou ajustar o padding interno dos cards */
+  }
+
+  .card7 > .container span,
+  .card1 > .container .span-lg{
+    font-size: 28px;
+  }
+
+  .card4 > .container .span-lg{
+    font-size: 24px;
+  }
+
+  .card2 > .contanier > span,
+  .card3 > .container > span,
+  .card8 > .container > span{
+    font-size: 20px;
+  }
+  .card6 > .container > span > p {
+      font-size: 30px; /* Exemplo */
+  }
+  .card4 > .container .content {
+      font-size: 14px; /* Texto menor */
+  }
+  .card1 > .container span:not(.span-lg):not(.destaque) { /* "Over 4,000 5-star reviews" */
+      font-size: 14px;
+  }
+
+  /* Ajustes específicos para o conteúdo dos cards no mobile */
+
+    .card1 > .container {
+        align-items: center; /* Centralizar conteúdo do card1 */
+        text-align: center;
+    }
+    .card1 > .container .img {
+        margin: 10px 0;
+    }
+    .card1 > .container .img img {
+        max-width: 120px; /* Ajustar tamanho da imagem de estrelas */
+    }
 
 
+    .card7 > .container {
+        align-items: center; /* Centralizar */
+        text-align: center;
+    }
+    .card7 > .container .img img {
+        max-width: 150px; /* Ajustar tamanho da imagem */
+        margin-top: 10px;
+    }
 
+    /* Resetar transformações de imagem que podem não fazer sentido no mobile */
+    .card4 > .container > .img img {
+        transform: none; /* Remove o translateX */
+        margin: 15px auto; /* Centraliza a imagem */
+        max-width: 200px; /* Ajustar tamanho */
+    }
+     .card4 > .container{
+        text-align: center;
+    }
+
+
+    .card3 > .container > .img img {
+        transform: none; /* Remove o translateY */
+        margin: 15px auto 0 auto; /* Centraliza a imagem e remove margem inferior estranha */
+        max-width: 180px; /* Ajustar tamanho */
+    }
+    .card3 > .container {
+        text-align: center;
+    }
+    .img img{
+      max-width: 40%;
+      height: auto;
+    }
+
+    /* Centralizar texto e imagem nos demais cards, se necessário */
+    .card2 > .container,
+    .card6 > .container,
+    .card8 > .container {
+        align-items: center; 
+        text-align: center;
+        justify-content: center;
+    }
+    .card2 > .container .img img,
+    .card6 > .container .img img,
+    .card8 > .container .img img {
+        margin-top:10px;
+        max-width: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
