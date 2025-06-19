@@ -1,0 +1,22 @@
+:root{
+--Neutral0: hsl(0, 0%, 100%);
+--Neutral300: hsl(252, 6%, 83%);
+--Neutral500: hsl(245, 15%, 58%);
+--Neutral700: hsl(245, 19%, 35%);
+--Neutral900: hsl(248, 70%, 10%);
+
+--Orange500: hsl(7, 88%, 67%);
+--Orange700: hsl(7, 71%, 60%);
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #f37362, #ffffff);
+    height: 100vh;
+}
