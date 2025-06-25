@@ -23,65 +23,44 @@
   </header>
 
   <main class="main">
+   
     <div class="main__title">
       <h1 class="main__heading">Your Journey to Coding Conf <br>2025 Starts Here!</h1>
       <p class="main__subtitle">Secure your spot at next year's biggest coding conference.</p>
     </div>
 
     <form class="form" id="form">  
-     
+      
       <div class="form__item">   
-        <label for="upload-arquivo" class="form__label">Upload Avatar</label>       
-        
-        <label for="upload-arquivo" class="form__upload-box">
-          <img src="./assets/images/icon-upload.svg" alt="Enviar imagem" class="form__upload-icon" />
-          <p>Drag and drop or click to upload</p>
-        </label>
-        
-        <input 
-          type="file" 
-          id="upload-arquivo" 
-          accept="image/*" 
-          class="form__file-input" 
-        />
+        <label for="upload-arquivo" class="form__label">Upload Avatar</label> 
+
+        <div class="form__upload-box" id="preview-box">
+          <img id="avatarPreview" class="form__upload-icon" src="./assets/images/icon-upload.svg" alt="Preview">
+          <p id="uploadText">Drag and drop or click to upload</p>
+        </div>
+
+        <input type="file" id="upload-arquivo" accept="image/*" class="form__file-input"/>
+
+        <div class="form__upload-buttons">
+          <button id="btn-remover" disabled>Remove image</button>
+          <button id="btn-trocar">Change image</button>
+        </div>
       </div>
+
 
       <div class="form__item">
         <label for="full_name" class="form__label">Full Name</label>
-        <input 
-          type="text" 
-          name="full_name" 
-          id="full_name" 
-          class="form__input"
-        >
+        <input type="text" name="full_name" id="full_name" class="form__input">
       </div>
 
       <div class="form__item">
-        <label 
-        for="email_address" 
-        class="form__label">Email Address</label>
-        <input 
-          type="text" 
-          placeholder="example@email.com" 
-          name="email_address" 
-          id="email_address" 
-          class="form__input"
-          required
-        >
+        <label for="email_address" class="form__label">Email Address</label>
+        <input type="text" placeholder="example@email.com" name="email_address" id="email_address" class="form__input" required>
       </div>
 
       <div class="form__item">
-        <label 
-        for="github_username" 
-        class="form__label">GitHub Username</label>
-        <input 
-          type="text" 
-          name="github_username" 
-          id="github_username" 
-          class="form__input" 
-          placeholder="@yourusername"
-          required
-        >
+        <label for="github_username" class="form__label">GitHub Username</label>
+        <input type="text" name="github_username" id="github_username" class="form__input" placeholder="@yourusername" required>
       </div>
   
       <div class="form__item">
@@ -90,7 +69,6 @@
 
     </form>
   </main>
-  
   <script src="script.js"></script>
 </body>
 </html>
