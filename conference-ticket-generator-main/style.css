@@ -166,20 +166,30 @@ body {
   margin: auto;
   width: 100%;
   color: white;
-}
-.form__upload-box:hover {
-  border-color: #ff5e5e;
+  
+  &:hover {
+    border-color: #ff5e5e;
+  }
 }
 .form__file-input {
     display: none;
 }
 
 .form__upload-icon {
-    width: 48px;
-    height: 48px;
-    border: 1px solid white;
-    border-radius: 20px;
+  width: 70px;
+  border-radius: 50%;        /* Deixa a imagem redonda */
+  object-fit: cover;         /* Garante que a imagem se encaixe bem */
+  border: 2px solid white;   /* Um contorno bonito */
 }
+.ticket__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+
 
 .form__upload-box > p{
     margin: 10px;

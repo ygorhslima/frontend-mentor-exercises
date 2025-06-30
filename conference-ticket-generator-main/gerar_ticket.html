@@ -21,7 +21,7 @@
 
     <main class="main">
         <div class="main__title">
-            <h1 class="main__heading">Congrats, {} Yout ticket is ready</h1>
+            <h1 class="main__heading">Congrats, {} Your ticket is ready</h1>
             <p class="main__subtitle">We've emailed your ticket to {} and will send updates in the run up to the event</p>
         </div>
         
@@ -35,5 +35,43 @@
             </div>
         </div>
     </main>
+
+    <script>
+        // obtendo os dados do objeto que eu tinha criado lá no script.js
+        const dados = JSON.parse(localStorage.getItem("usuario_ticket"))
+
+        if (dados){
+            // define os textos com os dados do usuário
+            document.querySelector(".main__heading").innerHTML = `Congrats, ${dados.nome} Your ticket is ready`
+
+            document.querySelector(".main__subtitle").innerHTML = `We've emailed your ticket to <strong>${dados.email}</strong> and will send updates in the run up to the event`
+            
+            // define o nome, email e github no ticket__content
+            document.getElementById("full_name").textContent = dados.nome
+            
+            document.getElementById("email_address").textContent = dados.email
+
+            document.getElementById("github_username").textContent = dados.github
+            
+            // adiciona a imagem de avatar
+            const img = document.createElement("img")
+            img.src = dados.avatarBase64
+            img.alt = "Avatar do usuário"
+            img.classList.add("ticket")
+
+
+            // Insere o avatar no início do conteúdo do ticket
+            document.querySelector(".ticket__content").prepend(img)
+        }else{
+            // Caso não haja dados, mostra uma mensagem de erro
+            document.getElementById("main__title").innerHTML = `
+               <h1>nenhum ticket encontrado</h1>
+            `
+             document.querySelector(".main__ticket").style.display = "none";
+
+        }
+        
+      
+    </script>
 </body>
 </html>
