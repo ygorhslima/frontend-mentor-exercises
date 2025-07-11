@@ -1,3 +1,12 @@
+:root{
+    --red: hsl(4, 100%, 67%);
+    --blue-800: hsl(234, 29%, 20%);
+    --blue-700: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%, 58%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
 *{
     margin:0px;
     padding: 0px;
@@ -5,3 +14,110 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+    background-color: var(--blue-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 60%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.content{
+    padding: 10px;
+}
+
+.content .title{
+    color: var(--blue-700);
+    font-size: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.content .description{
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.list{
+    list-style-type: none;
+    padding-left:0;
+}
+
+.list li{
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.list li::before{
+   content: ''; /* O conteúdo fica vazio */
+  
+  /* Define a imagem de fundo */
+  background-image: url('assets/images/icon-list.svg');
+  background-size: 16px 16px; /* Define o tamanho do ícone */
+  background-repeat: no-repeat;
+  
+  /* Define as dimensões do pseudo-elemento */
+  width: 18px;
+  height: 18px;
+  
+  /* Posicionamento */
+  position: absolute;
+  left: 0;
+  top: 5px; /* Ajuste fino da posição vertical */
+}
+
+/* --- FORMULÁRIO --- */
+.form-wrapper {
+    padding: 10px;
+    margin: 10px;
+}
+
+.container-form {    
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.container-form label {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.container-form .label-email-input{
+    font-size: 20px;
+}
+
+.txt_email-input{
+    padding: 10px;
+    margin: 10px;
+}
+
+.button{
+    padding: 15px;
+    background-color: var(--blue-800);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image .img{
+    width: 100%;
+    height: 100%;
+}

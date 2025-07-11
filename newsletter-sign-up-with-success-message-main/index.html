@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <h1 class="title">Stay updated!</h1>
-    <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+    <div class="content">
+      <h1 class="title">Stay updated!</h1>
+      <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
     
-    <ul class="list">
-      <li class="item">Product discovery and building what matters</li>
-      <li class="item">Measuring to ensure updates are a success</li>
-      <li class="item">And much more!</li>
-    </ul>
+      <ul class="list">
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
 
-    <form class="container-form">
-      <label for="txt_email">Email address</label>
-      <input type="text" name="txt_email" id="txt_email" class="txt_email-input" autocomplete="off" required placeholder="email@company.com">
-    </form>
+      <div class="form-wrapper">
+        <form class="container-form" action="#">
+          
+          <label for="txt_email" class="label-email-input">Email address</label>
+          <input type="text" name="txt_email" id="txt_email" class="txt_email-input" autocomplete="off" required placeholder="email@company.com">
 
-    <button type="submit" class="button">Subscribe to monthly newsletter</button>
+          <button type="submit" class="button">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" class="img">
+    </div>
   </div>
 
+
+  <!-- Success message end 
+  
   <div class="container">
     <h1 class="title">Thanks for subscribing!</h1>
     <p class="description">
@@ -35,11 +48,10 @@
     </p>
   </div>
 
-  <!-- Success message end -->
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  -->
 </body>
 </html>
