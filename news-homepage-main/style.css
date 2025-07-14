@@ -124,6 +124,8 @@ header .menu a:hover{
 .content-container-2{
     background-color: var(--very-dark-blue);
     width: 100%;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .content-container-2 .title-new{
