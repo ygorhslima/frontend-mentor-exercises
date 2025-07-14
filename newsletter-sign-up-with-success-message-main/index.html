@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-querie.css">
 </head>
 <body>
 
@@ -24,16 +25,18 @@
       <div class="form-wrapper">
         <form class="container-form" action="#">
           
-          <label for="txt_email" class="label-email-input">Email address</label>
-          <input type="text" name="txt_email" id="txt_email" class="txt_email-input" autocomplete="off" required placeholder="email@company.com">
-
+          <label for="email" class="label-email-input">Email address</label>
+          <input type="email" name="email" id="email" class="txt_email-input" autocomplete="off" required placeholder="email@company.com">
+  
           <button type="submit" class="button">Subscribe to monthly newsletter</button>
         </form>
       </div>
     </div>
-
     <div class="image">
-      <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" class="img">
+      <picture>
+        <source media="(max-width: 799px)" srcset="assets/images/illustration-sign-up-mobile.svg" type="image/svg+xml">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" class="img">
+      </picture>
     </div>
   </div>
 
