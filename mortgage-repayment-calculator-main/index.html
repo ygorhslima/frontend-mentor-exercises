@@ -1,61 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Mortgage repayment calculator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Hipoteca</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Mortgage Calculator
-  Clear All
+  <div class="container">
+    <!-- Seção do Formulário -->
+    <div class="container-content">
+      <div class="container-title">
+        <h1 class="title">Mortgage Calculator</h1>
+        <a href="#" class="clear-form">Clear All</a>
+      </div>
 
-  Mortgage Amount
+      <div class="container-form">
+        <form>
+          <!-- Campo: Valor da Hipoteca -->
+          <div class="form-group">
+            <label for="txt_mortgage_amount">Mortgage Amount</label>
+            <div class="input-wrapper">
+              <span class="input-adornment">£</span>
+              <input type="number" id="txt_mortgage_amount" placeholder="300.000" required>
+            </div>
+          </div>
 
-  Mortgage Term
+          <!-- Linha para agrupar Prazo e Taxa de Juros -->
+          <div class="form-row">
+            <!-- Campo: Prazo da Hipoteca -->
+            <div class="form-group">
+              <label for="txt_mortgage_term">Mortgage Term</label>
+              <div class="input-wrapper">
+                <input type="number" id="txt_mortgage_term" placeholder="25" required>
+                <span class="input-adornment">years</span>
+              </div>
+            </div>
 
-  Interest Rate
+            <!-- Campo: Taxa de Juros -->
+            <div class="form-group">
+              <label for="txt_interest_rate">Interest Rate</label>
+              <div class="input-wrapper">
+                <input type="number" id="txt_interest_rate" placeholder="5.25" required>
+                <span class="input-adornment">%</span>
+              </div>
+            </div>
+          </div>
 
-  Mortgage Type
-  Repayment
-  Interest Only
+          <!-- Campo: Tipo de Hipoteca (Radio) -->
+          <div class="form-group">
+            <label>Mortgage Type</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" id="repayment" name="mortgage-type" value="repayment" checked>
+                <label for="repayment">Repayment</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="interest-only" name="mortgage-type" value="interest-only">
+                <label for="interest-only">Interest Only</label>
+              </div>
+            </div>
+          </div>
 
-  Calculate Repayments
+          <!-- Botão de Calcular -->
+          <button class="calculate-btn" id="btn_calculate" type="submit">
+            Calculate Repayments
+          </button>
+        </form>
+      </div>
+    </div>
 
-  <!-- Empty results start -->
+    <!-- Seção de Resultados -->
+    <div class="container-result">
+      <div class="img-result-empty">
+        <img src="assets/images/illustration-empty.svg" alt="illustration-empty" class="img-empty">
+      </div>
 
-  Results shown here
+      <div class="results-content">
+        <h2>Your results</h2>
+        <p>Complete the form and click "calculate repayment" to see what monthly repayment would be</p>
+      </div>
+      
+      
 
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
-
-  <!-- Empty results end -->
-
-  <!-- Completed results start -->
-
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
-
-  <!-- Completed results end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
