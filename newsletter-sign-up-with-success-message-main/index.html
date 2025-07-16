@@ -26,9 +26,9 @@
         <form class="container-form" action="#">
           
           <label for="email" class="label-email-input">Email address</label>
-          <input type="email" name="email" id="email" class="txt_email-input" autocomplete="off" required placeholder="email@company.com">
+          <input type="email" name="email" id="txt_email" class="txt_email-input" autocomplete="off" placeholder="email@company.com" required>
   
-          <button type="submit" class="button">Subscribe to monthly newsletter</button>
+          <button type="submit" class="button" id="btn_subscribe">Subscribe to monthly newsletter</button>
         </form>
       </div>
     </div>
@@ -38,23 +38,20 @@
         <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" class="img">
       </picture>
     </div>
-  </div>
 
 
-  <!-- Success message end 
-  
-  <div class="container">
-    <h1 class="title">Thanks for subscribing!</h1>
-    <p class="description">
-      A confirmation email has been sent to ash@loremcompany.com. 
-      Please open it and click the button inside to confirm your subscription.
-    </p>
+  </div>
+  <div class="container-success">
+    <div class="container-content">
+      <img src="assets/images/icon-success.svg" alt="icon-success">
+      <h1 class="title">Thanks for subscribing!</h1>
+      <p class="description">
+        A confirmation email has been sent to <span class="txt_email_result">ash@loremcompany.com.</span> 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
   </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  -->
+  <script src="script.js"></script>
 </body>
 </html>
