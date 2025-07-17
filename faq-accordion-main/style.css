@@ -25,8 +25,8 @@ body{
 }
 
 .container{
-    width: 700px;
-    height: 700px;
+    width: 60%;
+    height: 60%;
     background-color: white;
     margin: auto;
     padding: 10px;
@@ -76,9 +76,21 @@ body{
 }
 
 .faq-item-description {
-  /* Outros estilos para a descrição */
+    line-height: 1.1em;
+    text-indent: 1.2em;
 }
 
 .faq-item-description.hidden {
   display: none;
+}
+
+@media (max-width:600px)
+{
+    .container{
+        width: 100%;
+        height: 80%;
+    }
+    .faq-item .faq-item-title{
+        font-size: 12px;
+    }
 }
