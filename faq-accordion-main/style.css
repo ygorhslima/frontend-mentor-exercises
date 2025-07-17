@@ -1,0 +1,84 @@
+:root{
+    --white: hsl(0, 100%, 100%);
+    --purple-100: hsl(275, 100%, 97%);
+    --purple-600: hsl(292, 16%, 49%);
+    --purple-950: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--purple-100);
+    display: flex;
+    flex-direction: column;
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.container-title{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container-title h1{
+    font-size: 44px;
+}
+
+.accordion{
+    padding: 10px;
+}
+
+.accordion .faq-item{
+    padding: 10px;
+}
+.faq-item .faq-item-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 10px;
+}
+.faq-item p{
+    
+}
+
+.faq-item .btn-hide-description{
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 0.4s;
+    background-color: var(--purple-600);
+}
+.btn-hide-description:hover{
+    background-color: var(--purple-950);
+    color: white;
+}
+
+.faq-item-description {
+  /* Outros estilos para a descrição */
+}
+
+.faq-item-description.hidden {
+  display: none;
+}

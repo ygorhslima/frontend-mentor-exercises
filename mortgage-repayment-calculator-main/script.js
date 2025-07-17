@@ -45,15 +45,13 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
         // esconde a imagem
         // img_empty.style.display = "none"
-
-        
         const pagamentoMensal = calcPagamentoMensal(valorHipoteca, prazoAnos, taxaJurosAnual)
         const totalPago = pagamentoMensal * prazoAnos * 12
-
+        
+        //Convertendo os valores para o formato moeda Europeu
         const formatoMoeda = new Intl.NumberFormat("en-GB",{style: 'currency', currency:'GBP'})
         const pagamentoMensalFormatado = formatoMoeda.format(pagamentoMensal)
         const totalPagoFormatado = formatoMoeda.format(totalPago)
-
 
         // Limpa o conteúdo anterior
         results_content.innerHTML = "";
@@ -63,13 +61,11 @@ document.addEventListener("DOMContentLoaded",()=>{
         titleResult.textContent = "Your results"
         results_content.appendChild(titleResult)
 
-
         // Cria o parágrafo de resultado
         const paragraphResult = document.createElement("p")
         paragraphResult.textContent = "Your results are shown below based on the information you provided. To adjust the results, edit the form and click \"calculate repayments\" again."
         results_content.appendChild(paragraphResult)
-        
-        
+                
         const divResultSummary = document.createElement("div")
         divResultSummary.classList.add("results-summary")
         
