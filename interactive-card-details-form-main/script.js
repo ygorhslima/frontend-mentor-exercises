@@ -58,5 +58,3 @@ form.addEventListener("submit",(e)=>{
     console.log("Dados do formulário submetidos e exibidos no cartão!");
 
 })
-
-
