@@ -1,0 +1,63 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;    
+}
+
+.container-image{
+    background: url('./images/bg-main-desktop.png');
+    background-size: cover;
+    background-position: top center;
+    background-attachment: cover;
+    width: 50vw;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+    width: 100%;
+}
+
+.container-form .form{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+}
+
+.card-logo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.image{
+    width: 340px;
+}
+.img-01{
+    position: absolute;
+    top: 20%;
+    left: 17%;
+}
+
+.span_number_card{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    font-size: 20px;
+}
+
+.span_name{
+
+}
+
+.span_month{
+
+}
+
+.img-02{
+
+}

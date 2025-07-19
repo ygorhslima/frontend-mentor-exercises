@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-image">
+      <div class="img-01">
+        <img src="images/card-logo.svg" alt="" class="card-logo">
+        <img src="images/bg-card-front.png" alt="bg-card-front" class="image">
+        <div class="content">
+          <span class="span_number_card">0000 0000 0000 0000</span>
+          <span class="span_name">USERNAME</span>
+          <span class="span_month">00</span>/<span class="span_year">00</span>
+        </div>
+      </div>
+      <div class="img-02">
+        <img src="images/bg-card-back.png" alt="bg-card-back" class="image">
+        <span class="span_cvc">000</span>
+      </div>
+    </div>
+    <div class="container-form">
+      <form class="form">
+        <div class="form-item">
+          <label for="txt_name">Cardholder Name</label>
+          <br>
+          <input type="text" name="name" id="txt_name" required placeholder="e.g. Jane Appleseed" maxlength="30"> 
+        </div>
+  
+        <div class="form-item">
+          <label for="txt_number_card">Card Number</label>
+          <br>
+          <input type="text" name="number-card" id="txt_number_card" required placeholder="e.g.1234 5678 9123 0000" maxlength="19">
+        </div>
+  
+        <div class="form-item">
+          <label for="txt_exp_date_month">Exp. Date (MM/YY)</label>
+          <br>
+          <input type="text" name="exp_date_month" id="txt_exp_date_month" placeholder="MM" maxlength="2">
+          <input type="text" name="exp_date_year" id="txt_exp_date_year" placeholder="YY" maxlength="2">
+        </div>
+  
+        <div class="form-item">
+          <label for="txt_cvc">CVC</label>
+          <input type="text" name="cvc" id="txt_cvc" placeholder="e.g. 123" maxlength="3">
+        </div>
+        <button>Confirm</button>
+      </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
