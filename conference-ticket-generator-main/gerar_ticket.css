@@ -118,7 +118,7 @@ body {
     
       .ticket__content{
         position: absolute;
-        top: 20%;
+        top: 10%;
         left: 20%;
         color: white;
         z-index: 2;
