@@ -14,6 +14,8 @@ Abaixo está a lista de projetos que finalizei até agora. Clique no nome de cad
 - **[News Homepage](https://ygorhslima.github.io/frontend-mentor-exercises/news-homepage-main/)**: Uma página inicial para um site de notícias com layout responsivo.
 - **[Bento Grid](https://ygorhslima.github.io/frontend-mentor-exercises/bento-grid-main/)**: Uma página com layout em estilo bento grid, praticando CSS Grid.
 - **[Newsletter Sign-up with Success Message](https://ygorhslima.github.io/frontend-mentor-exercises/newsletter-sign-up-with-success-message-main/)**: Um formulário de inscrição para newsletter com mensagem de sucesso e validação de e-mail.
+- **[Interactive Card Details Form](https://ygorhslima.github.io/frontend-mentor-exercises/interactive-card-details-form-main/)**: Um formulário interativo para detalhes de cartão de crédito com atualizações em tempo real.
+- **[mortgage-repayment-calculator](https://ygorhslima.github.io/frontend-mentor-exercises/mortgage-repayment-calculator-main/)**: Um calculador de pagamento de empréstimo 
 
 ---
 Codificado por Ygor.
