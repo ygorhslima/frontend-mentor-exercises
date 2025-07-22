@@ -1,0 +1,63 @@
+@media screen and (max-width:981px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container-image{
+        background: url('./images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: top center;
+        height: 60vh;
+        width: 100vw;
+    }
+    .img-01{
+        top: 52%;
+        left: 35%;
+        transform: translateX(-50%);
+        z-index: 2;
+        
+    }
+    .img-01 .image{
+        width: 300px;
+    }
+    .img-01 .card-logo{
+        
+    }
+    .img-01 .content{
+        font-size: 10px;
+    }
+    .img-01 .span_number_card{
+        font-size: 16px;
+    }
+    .img-01 .content .span_name{
+       font-size: 14px;
+    }
+    .img-01 .content .span_month,
+    .img-01 .content .span_year{
+        font-size: 14px;
+    }
+
+    .img-02{
+        top: 13%;
+        left: 56%;
+    }
+
+    .img-02 .image{
+        width: 260px;
+
+    }
+
+    .img-02 .span_cvc{
+        top: 40%;
+    }
+
+    .container-form .form{
+        margin-top:130px;
+    }
+
+}
