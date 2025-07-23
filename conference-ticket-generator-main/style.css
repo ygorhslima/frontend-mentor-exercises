@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --Neutral0: hsl(0, 0%, 100%);
   --Neutral300: hsl(252, 6%, 83%);
   --Neutral500: hsl(245, 15%, 58%);
@@ -22,15 +22,13 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
     min-height: 100vh;
+    width: 100%;
     background-image: url('assets/images/background-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-color: #2a0044;
-    overflow: auto;
       
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,7 +38,7 @@ body {
     align-items: center;
 
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden; /* Evita a rolagem horizontal */
 }
 
 .background-patterns{
@@ -86,66 +84,67 @@ body {
     max-width: 600px;
     padding: 20px;
     width: 90%;
-
-    
-    .main__title {
-        padding: 10px;
-        text-align: center;
-    }
-    
-    .main__heading:hover{
-        transition: 0.6s;
-        color: var(--Orange500);
-    }
-
-    .main__subtitle {
-        padding: 10px;
-        font-weight: lighter;
-        font-variant: small-caps;
-    }
 }
 
+.main__title {
+    padding: 10px;
+    text-align: center;
+}
 
-.form{
-    .form__item {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
+.main__heading:hover{
+    transition: 0.6s;
+    color: var(--Orange500);
+}
 
-        .form__label {
-            color: var(--Neutral300);
-            margin: 10px;
-        }
-        
-        .form__input{
-            color: white;
-            border-radius: 20px;
-            padding: 14px;
-            border: none;
-            background-color: hsla(245, 19%, 35%, 0.292);
-            border: 1px solid hsla(252, 6%, 83%, 0.469);
+.main__subtitle {
+    padding: 10px;
+    font-weight: lighter;
+    font-variant: small-caps;
+}
 
-            &:hover{
-                transition: 0.4s;
-                background-color: #0000004a;
-            }
-        }
+.form__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem; /* Adiciona espaço entre os itens do formulário */
+}
 
-        .form__button {
-          padding: 10px;
-          border-radius: 20px;
-          border: none;
-          background-color: var(--Orange700);
-          margin: 20px;
-          
-          &:hover{
-            transition: 0.9s;
-            background-color: var(--orange-gradient-end);
-          }
+.form__label {
+    color: var(--Neutral300);
+    margin-bottom: 8px; /* Ajusta a margem */
+    margin-left: 10px;
+}
 
-        }  
-    }
+.form__input{
+    color: white;
+    border-radius: 20px;
+    padding: 14px;
+    border: 1px solid hsla(252, 6%, 83%, 0.469);
+    background-color: hsla(245, 19%, 35%, 0.292);
+}
+
+.form__input:hover{
+    transition: 0.4s;
+    background-color: #0000004a;
+}
+
+.form__button {
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--Orange700);
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form__button:hover{
+  background-color: var(--orange-gradient-end);
+  color: var(--Neutral900);
 }
 
 
@@ -164,7 +163,7 @@ body {
   background-color: #1e1e2f8e;
   cursor: pointer;
   transition: border 0.3s;
-  margin: auto;
+  margin: 0 auto 10px; /* Centraliza e adiciona margem inferior */
   width: 100%;
   color: white;
   
@@ -191,43 +190,61 @@ body {
   margin-bottom: 10px;
 }
 
-
 .form__upload-box > p{
     margin: 10px;
 }
 
 .form__upload-buttons{
   display: flex;
+  flex-direction: row; /* Padrão para desktop */
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
-
-  button{
-    padding: 6px 12px;
-    background-color: #ff5e5e;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    font-weight:bold;
-    cursor: pointer;
-    transition: background 0.3s;
-
-    &:hover:not(:disabled){
-      background-color: #ff3e3e;
-    }
-
-    &:disabled{
-      background-color: #888;
-      cursor: not-allowed;
-    }
-  }
 }
 
+.form__upload-buttons button{
+  padding: 8px 16px;
+  background-color: #ff5e5e;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight:bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
+.form__upload-buttons button:hover:not(:disabled){
+  background-color: #ff3e3e;
+}
 
-@media (max-width:400px) {
+.form__upload-buttons button:disabled{
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+/* Media Query para telas menores (celulares) */
+@media (max-width: 640px) {
   body{
     background-image: url('assets/images/background-mobile.png');
     background-position: top center;
+    background-size: cover;
+  }
+
+  .main {
+    padding: 15px;
+  }
+
+  /* Oculta os padrões decorativos que podem quebrar o layout no mobile */
+  .pattern-bottom, .pattern-top {
+    display: none;
+  }
+
+  .form__upload-buttons {
+    flex-direction: column; /* Empilha os botões verticalmente */
+    align-items: center;
+  }
+
+  .form__upload-buttons button {
+    width: 80%; /* Faz os botões ocuparem mais espaço */
   }
 }
