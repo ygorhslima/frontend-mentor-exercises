@@ -24,13 +24,14 @@
 body {
     height: 100vh;
     width: 100vw;
-    
+    min-height: 100vh;
     background-image: url('assets/images/background-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #2a0044; 
-    
+    background-color: #2a0044;
+    overflow: auto;
+      
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -225,8 +226,8 @@ body {
 
 
 @media (max-width:400px) {
-    .main{
-      width: 100vw;
-      height: 100vh;
-    }
+  body{
+    background-image: url('assets/images/background-mobile.png');
+    background-position: top center;
+  }
 }
