@@ -225,7 +225,8 @@ body {
 
 
 @media (max-width:400px) {
-    body{
-      background-color: white;
+    .main{
+      width: 100vw;
+      height: 100vh;
     }
 }

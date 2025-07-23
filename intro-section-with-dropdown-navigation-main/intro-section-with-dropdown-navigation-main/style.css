@@ -1,0 +1,232 @@
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh; /* ✅ Melhor que height: 100vh para evitar problemas de rolagem em algumas telas */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* ✅ Melhor distribuição dos elementos no cabeçalho */
+    padding: 10px;
+}
+
+.img {
+    display: flex;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+}
+
+.botao-menu {
+    color: var(--Medium-Gray);
+    border: none;
+    background: none;
+    transition: 0.8s;
+    cursor: pointer; /* ✅ Indica que é clicável */
+}
+
+.botao-menu:hover {
+    color: var(--Almost-Black);
+}
+
+.menu-links {
+    margin: 10px;
+    color: var(--Medium-Gray);
+    text-decoration: none;
+    transition: 0.8s;
+    cursor: pointer; /* ✅ Torna o link mais interativo */
+}
+
+.menu-links:hover {
+    color: var(--Almost-Black);
+}
+
+.dropdown-menu {
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.121);
+}
+
+.span_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: end;
+    width: 100%; /* ✅ Substituído por 100% */
+    max-width: 300px; /* ✅ Melhor responsividade */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-login {
+    display: flex;
+    margin: 10px;
+}
+
+.btn_login,
+.btn_register {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.btn_login a,
+.btn_register a {
+    color: var(--Almost-Black);
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.7s;
+    cursor: pointer; /* ✅ Aumenta a acessibilidade */
+}
+
+.btn_login {
+    border: 1px solid var(--Medium-Gray); /* ✅ Adicionado para manter padrão com o botão register */
+    text-align: center;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.btn_register {
+    text-align: center;
+    width: 100px;
+    border-radius: 30px;
+    border: 2px solid var(--Almost-Black);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ✅ Removido grid-template-rows desnecessário */
+}
+
+.container-content {
+    padding: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10%;
+    gap: 20px; /* ✅ Adicionado espaçamento entre os elementos */
+}
+
+.container-content__title {
+    font-size: 80px;
+}
+
+.container-content__p {
+    font-size: 20px;
+}
+
+.btn_learn_more {
+    display: block;
+    background-color: var(--Almost-Black);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 140px;
+    transition: 0.7s;
+}
+
+.btn_learn_more:hover {
+    opacity: 0.7;
+}
+
+.container-image {
+    text-align: center;
+    width: 100%; /* ✅ Adicionado para garantir ocupação total */
+}
+
+.container-image_img {
+    width: 100%; /* ✅ Adicionado para garantir responsividade */
+    max-width: 500px; /* ✅ Limite de largura para telas maiores */
+    height: auto;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 2px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px; /* ✅ Adicionado espaçamento entre os blocos */
+    }
+
+    .container-image {
+        width: 100vw;
+    }
+
+    .container-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* ✅ Adicionado para espaçamento interno no mobile */
+    }
+    .imagens{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .imagens img{
+        margin: 10px;
+    }
+
+    .container-content__title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .container-content__p {
+        font-size: 17px;
+        text-align: center;
+    }
+    .container-menu,.container-login{
+        display: none;
+    }
+    .btn{
+        display: block;
+    }
+    .container-menu-2{
+        display: flex;
+        flex-direction: column;
+    }
+}
