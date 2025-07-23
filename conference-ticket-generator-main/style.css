@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --Neutral0: hsl(0, 0%, 100%);
   --Neutral300: hsl(252, 6%, 83%);
   --Neutral500: hsl(245, 15%, 58%);
@@ -24,6 +24,7 @@
 body {
     min-height: 100vh;
     width: 100%;
+    /* Estilos de fundo para desktop */
     background-image: url('assets/images/background-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +39,7 @@ body {
     align-items: center;
 
     position: relative;
-    overflow-x: hidden; /* Evita a rolagem horizontal */
+    overflow-x: hidden; /* Garante que não haja rolagem horizontal */
 }
 
 .background-patterns{
@@ -83,7 +84,7 @@ body {
     flex-direction: column;
     max-width: 600px;
     padding: 20px;
-    width: 90%;
+    width: 90%; /* Ajusta a largura para ser mais flexível */
 }
 
 .main__title {
@@ -149,9 +150,7 @@ body {
 
 
 .form__upload-box {
-  width: 150px;
-  height: 150px;
-
+  /* Removi width: 150px; height: 150px; para permitir que o flexbox controle */
   border: 2px dashed #888;
   border-radius: 8px;
 
@@ -164,7 +163,8 @@ body {
   cursor: pointer;
   transition: border 0.3s;
   margin: 0 auto 10px; /* Centraliza e adiciona margem inferior */
-  width: 100%;
+  width: 100%; /* Garante que ocupe a largura total disponível */
+  min-height: 150px; /* Define uma altura mínima para manter o layout */
   color: white;
   
   &:hover {
@@ -177,7 +177,7 @@ body {
 
 .form__upload-icon {
   width: 70px;
-  border-radius: 50%;        /* Deixa a imagem redonda */
+  border-radius: 50%;         /* Deixa a imagem redonda */
   object-fit: cover;         /* Garante que a imagem se encaixe bem */
   border: 2px solid white;   /* Um contorno bonito */
 }
@@ -225,18 +225,23 @@ body {
 /* Media Query para telas menores (celulares) */
 @media (max-width: 640px) {
   body{
+    /* Ajustes para a imagem de fundo no mobile */
     background-image: url('assets/images/background-mobile.png');
     background-position: top center;
-    background-size: cover;
+    background-size: cover; /* Garante que a imagem cubra a área sem distorcer */
+    background-attachment: scroll; /* Para evitar problemas com backgrounds fixos em mobile */
+    overflow-x: hidden; /* Reforça que não haverá rolagem horizontal */
   }
 
   .main {
     padding: 15px;
+    width: 100%; /* Garante que o main ocupe 100% da largura no mobile */
+    max-width: none; /* Remove o max-width para não restringir a largura em telas pequenas */
   }
 
-  /* Oculta os padrões decorativos que podem quebrar o layout no mobile */
+  /* Oculta os padrões decorativos para mobile */
   .pattern-bottom, .pattern-top {
-    display: none;
+    display: none !important; /* Use !important para garantir que sobrescreva qualquer outro estilo */
   }
 
   .form__upload-buttons {
