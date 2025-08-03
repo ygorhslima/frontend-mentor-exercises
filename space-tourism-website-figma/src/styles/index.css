@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --fonte-padrao: "Montserrat", sans-serif;
+}
+
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+}
+
+
+body{
+    background-color: black;
+    color: white;
 }
