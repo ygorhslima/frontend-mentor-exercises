@@ -73,4 +73,33 @@ body{
     body{
         background-image: url('../assets/home/background-home-mobile.jpg');
     }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+    }
+    .content{
+        margin: auto;
+        text-align: center;
+        top: 15%;
+        left: 5%;
+        width: 90%;
+    }
+    .content-title{
+        font-size: 5em;
+    }
+
+
+    .container-button {
+        position: absolute;
+        bottom: 5%;
+        right: 30%;
+    }
+    .button_explore {
+        width: 150px;
+        height: 150px;
+    }
 }

@@ -12,11 +12,11 @@
 </head>
 <body>
 
+  
   <header class="menu">
       <div class="logo">
         <img src="assets/shared/logo.svg" alt="logo space">
       </div>
-      
       <div class="menu-navigation">
         <nav class="menu-navigation__nav">
 
@@ -38,6 +38,34 @@
         
         </nav>
       </div>
+
+      <!-- Botão de menu hamburguer -->
+      <button class="menu-toggle" id="abrirMenu">
+        <img src="assets/shared/icon-hamburger.svg" alt="">
+      </button>
+
+      <!-- Menu lateral -->
+      <nav class="menu-lateral" id="menuLateral">
+        <button class="fechar-menu" id="fecharMenu">✕</button>
+        <ul>
+          <a href="./index.html">
+            <span>00</span>Home
+          </a>
+          
+          <a href="./destination-moon.html">
+            <span>01</span>Destination
+          </a>
+          
+          <a href="./crew-engineer.html">
+            <span>02</span>Crew
+          </a>
+          
+          <a href="./technology-vehicle.html">
+            <span>03</span>Technology
+          </a>
+        </ul>
+      </nav>
+
   </header>
 
 
@@ -49,5 +77,8 @@
   Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
   the Linux-based Ubuntu operating system. Shuttleworth became the first South 
   African to travel to space as a space tourist.
+
+
+  <script src="scripts/navigation.js"></script>
 </body>
 </html>

@@ -55,3 +55,56 @@ body{
 .menu-navigation__nav a span{
     font-weight: bold;
 }
+
+
+/* Menu lateral escondido por padrão */
+.menu-lateral {
+  display: none;
+}
+
+/* Estilos gerais do botão */
+.menu-toggle {
+  display: none;
+}
+
+/* Aplica estilos apenas em telas de até 600px */
+@media screen and (max-width: 600px) {
+    .logo{
+        position: relative;
+        left: 88%;
+    }
+
+    .menu-navigation{
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        z-index: 1;
+    }
+
+    .menu-lateral {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: #111;
+        color: white;
+        transition: left 0.3s ease;
+        padding: 2rem;
+        z-index: 1000;
+    }
+
+    .menu-lateral.mostrar {
+        left: 0;
+    }
+}
