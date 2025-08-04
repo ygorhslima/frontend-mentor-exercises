@@ -6,6 +6,47 @@ body{
     background-position: center center;
 }
 
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.title-destination{
+
+}
+
+.menu-planets{
+
+}
+.menu-planets .button-planets{
+
+}
+
+
+.destination-content{
+
+}
+.destination-content .title-planet{
+
+}
+.destination-content .content-planet{
+
+}
+.information-planet{
+
+}
+
+
+.information-planet div{
+
+}
+.information-planet div .information-distance{
+
+} 
+.information-planet div .information-travel{
+
+}
 
 
 /*tablets*/
