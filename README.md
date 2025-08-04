@@ -17,6 +17,7 @@ Abaixo está a lista de projetos que finalizei até agora. Clique no nome de cad
 - **[mortgage-repayment-calculator](https://ygorhslima.github.io/frontend-mentor-exercises/mortgage-repayment-calculator-main/)**: Um calculador de pagamento de empréstimo 
 - **[News Homepage](https://ygorhslima.github.io/frontend-mentor-exercises/news-homepage-main/)**: Uma página inicial para um site de notícias com layout responsivo.
 - **[Newsletter Sign-up with Success Message](https://ygorhslima.github.io/frontend-mentor-exercises/newsletter-sign-up-with-success-message-main/)**: Um formulário de inscrição para newsletter com mensagem de sucesso e validação de e-mail.
+- **[Space Tourism Website Figma](https://ygorhslima.github.io/frontend-mentor-exercises/space-tourism-website-figma/src/index.html)**: um site completo, interativo e imersivo de um tour de uma agência espacial, utilizando técnicas de animações e transform CSS
 
 ---
 Codificado por Ygor.
