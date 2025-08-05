@@ -13,7 +13,7 @@
 </head>
 <body>
 
-   <header class="menu">
+  <header class="menu">
       <div class="logo">
         <img src="assets/shared/logo.svg" alt="logo space">
       </div>
@@ -76,88 +76,130 @@
 
   </header>
 
+
   <main>
-    <div class="image-planet">
-      <div class="title-destination"><p><span>01</span> Pick your destination</p></div>
-      <img src="assets/destination/image-moon.png" alt="">
-    </div>
+      <div class="title-destination">
+        <p><span>01</span> Pick your destination</p>
+      </div>
     
-    <section>
       <div class="menu-planets">
         <button class="button-planets" id="btn_moon">Moon</button>
         <button class="button-planets" id="btn_mars">Mars</button>
         <button class="button-planets" id="btn_europa">Europa</button>
         <button class="button-planets" id="btn_titan">Titan</button>
       </div>
-  
-      <div class="destination-content">
-        <p class="title-planet">Moon</p>
-        <p class="content-planet">
-          See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-          regain perspective and come back refreshed. While you’re there, take in some history 
-          by visiting the Luna 2 and Apollo 11 landing sites.
-        </p>
-        <hr>
-        <div class="information-planet">
-          <div>
-            <p class="information-distance">Avg. distance</p>
-            <p class="information-travel">384,400 km</p>
+    
+    
+      <div class="list">
+        <!-- Moon -->
+        <div class="item active">
+          <div class="image-planet">
+            <img src="assets/destination/image-moon.png" alt="Moon">
           </div>
-  
-          <div>
-            <p class="information-travel-time">Est. Travel time</p>
-            <p class="information-month">9 months</p>
+          <div class="content">
+            <p class="title-planet">Moon</p>
+            <p class="content-planet">
+              See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+              regain perspective and come back refreshed. While you’re there, take in some history 
+              by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+            <hr>
+            <div class="information-planet">
+              <div>
+                <p class="information-distance">Avg. distance</p>
+                <p class="information-travel">384,400 km</p>
+              </div>
+              <div>
+                <p class="information-travel-time">Est. Travel time</p>
+                <p class="information-month">3 days</p>
+              </div>
+            </div>
           </div>
         </div>
+    
+        <!-- Mars -->
+        <div class="item">
+          <div class="image-planet">
+            <img src="assets/destination/image-mars.png" alt="Mars">
+          </div>
+          <div class="content">
+            <p class="title-planet">Mars</p>
+            <p class="content-planet">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+              the tallest planetary mountain in our solar system. It’s two and a half times 
+              the size of Everest!
+            </p>
+            <hr>
+            <div class="information-planet">
+              <div>
+                <p class="information-distance">Avg. distance</p>
+                <p class="information-travel">225 mil. km</p>
+              </div>
+              <div>
+                <p class="information-travel-time">Est. Travel time</p>
+                <p class="information-month">9 months</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Europa -->
+        <div class="item">
+          <div class="image-planet">
+            <img src="assets/destination/image-europa.png" alt="Europa">
+          </div>
+          <div class="content">
+            <p class="title-planet">Europa</p>
+            <p class="content-planet">
+              The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+              winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+              ice skating, curling, hockey, or simple relaxation in your snug 
+              wintery cabin.
+            </p>
+            <hr>
+            <div class="information-planet">
+              <div>
+                <p class="information-distance">Avg. distance</p>
+                <p class="information-travel">628 mil. km</p>
+              </div>
+              <div>
+                <p class="information-travel-time">Est. Travel time</p>
+                <p class="information-month">3 years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Titan -->
+        <div class="item">
+          <div class="image-planet">
+            <img src="assets/destination/image-titan.png" alt="Titan">
+          </div>
+          <div class="content">
+            <p class="title-planet">Titan</p>
+            <p class="content-planet">
+              The only moon known to have a dense atmosphere other than Earth, Titan 
+              is a home away from home (just a few hundred degrees colder!). As a 
+              bonus, you get striking views of the Rings of Saturn.
+            </p>
+            <hr>
+            <div class="information-planet">
+              <div>
+                <p class="information-distance">Avg. distance</p>
+                <p class="information-travel">1.6 bil. km</p>
+              </div>
+              <div>
+                <p class="information-travel-time">Est. Travel time</p>
+                <p class="information-month">7 years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
       </div>
-    </section>
   </main>
 
-
-
-
-  
-  <!--
-  Mars
-  
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-  
-  Avg. distance
-  225 mil. km
-  
-  Est. travel time
-  9 months
-  
-  
-  Europa
-
-  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-  ice skating, curling, hockey, or simple relaxation in your snug 
-  wintery cabin.
-
-  Avg. distance
-  628 mil. km
-
-  Est. travel time
-  3 years
-
-
-  Titan
-
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
-
-  Avg. distance
-  1.6 bil. km
-
-  Est. travel time
-  7 years
-  -->
-
+  <script src="scripts/destination.js"></script>
   <script src="scripts/navigation.js"></script>
 </body>
 </html>
