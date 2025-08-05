@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root{
     --fonte-padrao: "Montserrat", sans-serif;
+    --fonte-destaque: "Oswald", sans-serif;
 }
 
 
@@ -26,13 +28,12 @@ body{
     flex-direction:row;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 5px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.832), rgba(161, 161, 161, 0.523));
+    width: 100vw;
 }
 
-.menu .logo{
-    padding: 10px;
-}
 .menu .menu-navigation .menu-navigation__nav{
     display: flex;
     flex-direction: row;
@@ -46,6 +47,8 @@ body{
     text-decoration: none;
     color: white;
     transition: 0.6s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .menu-navigation__nav a:hover{
@@ -53,7 +56,7 @@ body{
 }
 
 .menu-navigation__nav a span{
-    font-weight: bold;
+    font-family: var(--fonte-padrao);
 }
 
 
@@ -118,6 +121,8 @@ body{
         text-decoration: none;
         color: white;
         transition: 0.6s;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
     .menu-lateral ul li a:hover {
         opacity: 0.6;
