@@ -1,13 +1,161 @@
+:root{
+    --fonte-padrao: "Montserrat", sans-serif;
+    --fonte-destaque: "Oswald", sans-serif;
+}
+
+
 body{
    background-image: url('../assets/crew/background-crew-desktop.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: top center;
    background-attachment: fixed;
+   font-family: var(--fonte-destaque);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vw;
+    box-sizing: border-box;
+}
+
+main .title-crew{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+main .title-crew p > span{
+    font-weight: bold;
+}
+
+/* --- LISTA: empilha itens na mesma célula --- */
+main .list {
+    display: grid;            /* empilha os itens */
+    place-items: center;      /* centraliza conteúdo */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* opcional: garanta altura mínima para evitar "salto" visual */
+    min-height: 420px;
+}
+
+/* --- ITEM: escondido por padrão, lado a lado (texto esquerda, imagem direita) --- */
+main .list .item {
+    grid-area: 1 / 1;                     /* todos na mesma posição */
+    display: flex;                        /* layout interno do item */
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+
+    opacity: 0;                           /* escondido */
+    pointer-events: none;                 /* não clicável */
+    transform: translateY(10px) scale(0.98);
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+/* --- ITEM ativo: aparece --- */
+main .list .item.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+    z-index: 1;                           /* garante ficar por cima */
+}
+
+/* --- Colunas internas: texto à esquerda, imagem à direita --- */
+main .list .item .content {
+    flex: 1 1 50%;
+    max-width: 520px;
+    color: white;
+}
+
+.item .image-specialist {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;  /* ajuste fino horizontal da imagem */
+    align-items: flex-end;     /* ou center, se preferir */
+}
+
+.item .image-specialist img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item .image-specialist img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
+.item .content .title-specialist{
+    font-size: 2em;
+}
 
+.item .content .title-name-specialist{  
+    font-size: 3em;
+}
+
+.item .content .content-specialist{
+    
+}
+
+.item .image-specialist{
+    width: 40%;
+}
+
+.indicator {
+    position: absolute;
+    top: 100%;
+    left: 14%;
+    transform: translateX(-50%);
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 15px;
+}
+
+.indicator  > .indicator-crew{
+
+}
+
+.arrows{
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+button:nth-child(1){
+    transform: scale(-1);
+}
+
+.arrows button{
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: 0.6s;
+}
+.arrows button:hover{
+    background-color: rgb(25, 25, 162);
+} 
+
+.arrows img{
+    width: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
 
 /*tablets*/
 @media screen and (max-width:728px) {

@@ -1,32 +1,35 @@
 /* ------------------------------
    BACKGROUND
+   Define a imagem e estilo de fundo da página
 ------------------------------ */
 body {
-    background-image: url('../assets/destination/background-destination-desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    color: white;
-    font-family: var(--fonte-destaque);
+    background-image: url('../assets/destination/background-destination-desktop.jpg'); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-size: cover; /* Ajusta para cobrir toda a tela */
+    background-attachment: fixed; /* Fundo fixo ao rolar a página */
+    background-position: center center; /* Centraliza a imagem */
+    color: white; /* Texto branco */
+    font-family: var(--fonte-destaque); /* Fonte definida na variável */
     margin: 0;
     padding: 0;
 }
 
 /* ------------------------------
    MAIN
+   Define o layout principal
 ------------------------------ */
 main {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    min-height: 100vh;
-    padding: 60px 10vw;
-    box-sizing: border-box;
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Elementos em coluna */
+    width: 100vw; /* Largura total da viewport */
+    min-height: 100vh; /* Altura mínima de uma tela inteira */
+    padding: 60px 10vw; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
 }
 
 /* ------------------------------
    TÍTULO DA PÁGINA
+   Estiliza o título principal e subtítulo
 ------------------------------ */
 .title-destination {
     letter-spacing: 5px;
@@ -44,31 +47,33 @@ main {
 
 /* ------------------------------
    BOTÕES DOS PLANETAS
+   Menu de seleção de planetas
 ------------------------------ */
 .menu-planets {
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Espaçamento entre botões */
     margin-bottom: 30px;
 }
 
 .menu-planets .button-planets {
-    background: none;
-    border: none;
-    cursor: pointer;
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de clique */
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-family: var(--fonte-destaque);
-    transition: 0.3s;
+    transition: 0.3s; /* Animação suave */
     font-size: 1em;
 }
 
 .menu-planets .button-planets:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinhar ao passar o mouse */
 }
 
 /* ------------------------------
    LISTA DE PLANETAS
+   Área que contém o planeta e suas informações
 ------------------------------ */
 .list {
     width: 100%;
@@ -79,43 +84,44 @@ main {
 
 /* ------------------------------
    ITEM DO PLANETA
+   Cada planeta com sua imagem e conteúdo
 ------------------------------ */
 .item {
-    display: none;
-    flex-direction: row;
-    gap: 50px;
+    display: none; /* Esconde por padrão */
+    flex-direction: row; /* Imagem e texto lado a lado */
+    gap: 50px; /* Espaço entre imagem e texto */
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 1200px;
 
+    /* Efeito inicial ao entrar */
     opacity: 0;
     transform: scale(0.95);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .item.active {
-    display: flex;
+    display: flex; /* Mostra o item ativo */
     opacity: 1;
     transform: scale(1);
 }
 
+/* Imagem do planeta */
 .image-planet img {
     width: 350px;
     height: auto;
-    transition: transform 0.5s ease;
-
-    animation: animationPlanet 6s infinite linear;
+    animation: animationPlanet 20s linear infinite; /* Rotação contínua */
 }
 
-
-.item.active img {
-    transition: 1s;
-    transform: scale(1.1); /* animação de zoom na imagem ativa */
+/* Efeito de zoom ao passar o mouse no planeta ativo */
+.item.active img:hover {
+    transform: scale(1.1) rotate(50deg);
 }
 
 /* ------------------------------
    CONTEÚDO DO PLANETA
+   Texto e descrição
 ------------------------------ */
 .content {
     flex: 1;
@@ -126,13 +132,11 @@ main {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-
-
 .item.active .content {
     width: 400px;
     height: 400px;
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* Sobe para posição original */
 }
 
 .content .title-planet {
@@ -154,6 +158,7 @@ main {
 
 /* ------------------------------
    INFORMAÇÕES DO PLANETA
+   Distância e tempo de viagem
 ------------------------------ */
 .information-planet {
     display: flex;
@@ -178,77 +183,22 @@ main {
     font-size: 1.5em;
 }
 
-
-/**Animações**/
-
+/* ------------------------------
+   ANIMAÇÃO DO PLANETA
+   Rotação completa de 360°
+------------------------------ */
 @keyframes animationPlanet {
-    0%{
-        transform:rotate(0deg);
-    }
-    5%{
-        transform: rotate(5deg);
-    }
-    10%{
-        transform: rotate(10deg);
-    }
-    15%{
-        transform: rotate(15deg);
-    }
-    20%{
-        transform: rotate(20deg);
-    }
-    25%{
-        transform: rotate(25deg);
-    }
-    30%{
-        transform: rotate(30deg);
-    }
-    35%{
-        transform: rotate(35deg);
-    }
-    40%{
-        transform: rotate(40deg);
-    }
-    45%{
-        transform: rotate(45deg);
-    }
-    50%{
-        transform: rotate(50deg);
-    }
-    55%{
-        transform: rotate(45deg);
-    }
-    60%{
-        transform: rotate(40deg);
-    }
-    65%{
-        transform: rotate(35deg);
-    }
-    70%{
-        transform: rotate(30deg);
-    }
-    75%{
-        transform: rotate(25deg);
-    }
-    80%{
-        transform: rotate(20deg);
-    }
-    85%{
-        transform: rotate(15deg);
-    }
-    90%{
-        transform: rotate(10deg);
-    }
-    95%{
-        transform: rotate(5deg);
-    }
-    100%{
+    0% {
         transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg); /* Gira completamente */
     }
 }
 
 /* ------------------------------
    MEDIA QUERIES
+   Ajustes para telas menores
 ------------------------------ */
 @media screen and (max-width: 768px) {
     main {
@@ -256,12 +206,12 @@ main {
     }
 
     .item {
-        flex-direction: column;
+        flex-direction: column; /* Coloca imagem e texto em coluna */
         text-align: center;
     }
 
     .image-planet img {
-        width: 200px;
+        width: 200px; /* Reduz tamanho da imagem */
         margin-bottom: 20px;
     }
 
@@ -277,6 +227,6 @@ main {
 
     .menu-planets {
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Quebra linha se precisar */
     }
 }
