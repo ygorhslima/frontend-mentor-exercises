@@ -3,21 +3,22 @@
     --fonte-destaque: "Oswald", sans-serif;
 }
 
-
 body{
-   background-image: url('../assets/crew/background-crew-desktop.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: top center;
-   background-attachment: fixed;
-   font-family: var(--fonte-destaque);
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    font-family: var(--fonte-destaque);
+    margin: 0;
+    padding: 0;
 }
 
 main{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -39,8 +40,8 @@ main .list {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    /* opcional: garanta altura mínima para evitar "salto" visual */
-    min-height: 420px;
+    min-height: 420px;        /* evita "salto" visual */
+    position: relative;
 }
 
 /* --- ITEM: escondido por padrão, lado a lado (texto esquerda, imagem direita) --- */
@@ -56,6 +57,7 @@ main .list .item {
     pointer-events: none;                 /* não clicável */
     transform: translateY(10px) scale(0.98);
     transition: opacity .4s ease, transform .4s ease;
+    z-index: 0;
 }
 
 /* --- ITEM ativo: aparece --- */
@@ -76,22 +78,15 @@ main .list .item .content {
 .item .image-specialist {
     flex: 1 1 50%;
     display: flex;
-    justify-content: center;  /* ajuste fino horizontal da imagem */
-    align-items: flex-end;     /* ou center, se preferir */
+    justify-content: center;  
+    align-items: flex-end;     
 }
 
 .item .image-specialist img {
-    max-width: 100%;
+    width: 300px;
     height: auto;
     display: block;
 }
-
-.item .image-specialist img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 
 .item .content .title-specialist{
     font-size: 2em;
@@ -102,41 +97,41 @@ main .list .item .content {
 }
 
 .item .content .content-specialist{
-    
+    margin-top: 15px;
 }
 
-.item .image-specialist{
-    width: 40%;
-}
-
+/* --- INDICADORES --- */
 .indicator {
     position: absolute;
-    top: 100%;
-    left: 14%;
+    top: 80%;
+    left: 50%;
     transform: translateX(-50%);
-    height: 200px;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 15px;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.indicator  > .indicator-crew{
-
+.indicator-crew {
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+.indicator-crew.active {
+    background-color: black;
+}
+
+/* --- SETAS --- */
 .arrows{
     width: 70vw;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-}
-
-button:nth-child(1){
-    transform: scale(-1);
+    margin: 30px;
 }
 
 .arrows button{
@@ -146,7 +141,9 @@ button:nth-child(1){
     width: 40px;
     height: 40px;
     transition: 0.6s;
+    background-color: white;
 }
+
 .arrows button:hover{
     background-color: rgb(25, 25, 162);
 } 
@@ -157,18 +154,30 @@ button:nth-child(1){
     cursor: pointer;
 }
 
-/*tablets*/
-@media screen and (max-width:728px) {
+button:nth-child(1){
+    transform: scale(-1); /* seta esquerda invertida */
+}
+
+/* --- RESPONSIVO: tablets --- */
+@media screen and (max-width:768px) {
     body{
         background-image: url('../assets/crew/background-crew-tablet.jpg');
     }
+    main .list .item {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+    }
+    main .list .item .content,
+    .item .image-specialist {
+        flex: 1 1 auto;
+        max-width: 100%;
+    }
 }
 
-
-/*celular*/
-@media screen and (max-width: 600px) {
+/* --- RESPONSIVO: celulares --- */
+@media screen and (max-width:600px) {
     body{
         background-image: url('../assets/crew/background-crew-mobile.jpg');
     }
 }
-
