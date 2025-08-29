@@ -114,10 +114,6 @@ main {
     animation: animationPlanet 20s linear infinite; /* Rotação contínua */
 }
 
-/* Efeito de zoom ao passar o mouse no planeta ativo */
-.item.active img:hover {
-    transform: scale(1.1) rotate(50deg);
-}
 
 /* ------------------------------
    CONTEÚDO DO PLANETA
