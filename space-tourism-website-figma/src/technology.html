@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,13 +86,12 @@
         <span class="indicator-technology">1</span>
         <span class="indicator-technology">2</span>
         <span class="indicator-technology">3</span>
-        <span class="indicator-technology">4</span>
       </div>
 
       <div class="list">
-        <p class="terminology">The terminology...</p>
-        <div class="item">
+        <div class="item active">
           <div class="content">
+            <p class="terminology">The terminology...</p>
             <h1 class="title-technology">Launch vehicle</h1>
             <p class="content-technology">
                 A launch vehicle or carrier 
@@ -108,24 +107,34 @@
             </p>
           </div>
           <div class="image-technology">
-            <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="">
+            <picture>
+                <source media="(max-width: 600px)" srcset="assets/technology/image-launch-vehicle-landscape.jpg" type="image/jpg">
+                <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="image-launch-vehicle-landscape">
+            </picture>
           </div>
         </div>
 
         <div class="item">
           <div class="content">
+
+            <p class="terminology">The terminology...</p>
             <h1 class="title-technology">Spaceport</h1>
             <p class="content-technology">
               A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.
             </p>
           </div>
           <div class="image-technology">
-            <img src="assets/technology/image-spaceport-landscape.jpg" alt="">
+            <picture>
+                <source media="(max-width: 600px)" srcset="assets/technology/image-spaceport-landscape.jpg" type="image/jpg">
+                <img src="assets/technology/image-spaceport-portrait.jpg" alt="image-space-capsule-landscape">
+            </picture>
           </div>
         </div>
 
         <div class="item">
           <div class="content">
+
+            <p class="terminology">The terminology...</p>
             <h1 class="title-technology">Space capsule</h1>
             <p class="content-technology">
               A space capsule is an often-crewed 
@@ -139,22 +148,16 @@
             </p>
           </div>
           <div class="image-technology">
-            <img src="assets/technology/image-space-capsule-landscape.jpg" alt="">
+            <picture>
+                <source media="(max-width: 600px)" srcset="assets/technology/image-space-capsule-landscape.jpg" type="image/jpg">
+                <img src="assets/technology/image-space-capsule-portrait.jpg" alt="">
+            </picture>
           </div>
         </div>
       </div>
   </main>
 
-  
-
-
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
-
+  <script src="./scripts/technology-navigation.js"></script>
   <script src="scripts/navigation.js"></script>
 </body>
 </html>
