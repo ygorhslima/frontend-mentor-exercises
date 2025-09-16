@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-thankyou">
+        <div class="img-thank-you">
+            <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
+        </div>
+        <div class="content-feedback">
+            <h2 class="title-feedback">Thank you!</h2>
+            <p class="description-feedback">
+                We appreciate you taking the time to 
+                give a rating. If you ever need more support, 
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+    </div>
+    <script>
+        const rating = localStorage.getItem("rating")
+        const maxRating = 5;
+
+        if(rating){
+            const paragrafo_feedback = document.createElement("p");
+            paragrafo_feedback.setAttribute("class","p_submit");
+            paragrafo_feedback.textContent = `You selected ${rating} out of ${maxRating}`;
+            
+            const img_thank_you = document.querySelector(".img-thank-you");
+            img_thank_you.appendChild(paragrafo_feedback);
+        }
+    </script>
+</body>
+</html>
