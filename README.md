@@ -19,5 +19,7 @@ Abaixo está a lista de projetos que finalizei até agora. Clique no nome de cad
 - **[Newsletter Sign-up with Success Message](https://ygorhslima.github.io/frontend-mentor-exercises/newsletter-sign-up-with-success-message-main/)**: Um formulário de inscrição para newsletter com mensagem de sucesso e validação de e-mail.
 - **[Space Tourism Website Figma](https://ygorhslima.github.io/frontend-mentor-exercises/space-tourism-website-figma/src/index.html)**: um site completo, interativo e imersivo de um tour de uma agência espacial, utilizando técnicas de animações e transform CSS
 
+- **[Interactive rating component main](https://ygorhslima.github.io/frontend-mentor-exercises/projects-newbie/interactive-rating-component-main/)**: projeto simples para avaliação de 0 a 5 estrelas
+
 ---
 Codificado por Ygor.
