@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Stone100);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-recipe{
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    font-size: 0.9em;
+    color: var(--Stone600);
+}
+.content p{
+    line-height: 1.4em;
+}
+
+.title-content{
+    color: var(--Brown800);
+    font-family: "Young Serif", serif;
+    font-size: 25px;
+    margin: 10px 0px 10px 0px;
+}
+
+.content .preparation-time-ingredients{
+    margin: 20px;
+}
+.content .preparation-time-ingredients h1{
+    text-align: start;
+    font-family: "Young Serif", serif;
+    margin: 10px 0px 10px 0px;
+}
+
+.preparation-time-container{
+    background-color: var(--Stone100);
+    padding: 10px;
+    margin: 10px 3px 10px 3px;
+}
+.preparation-time-container .title-preparation-time{
+    color: var(--Rose800);
+    font-size: 1.2em;
+} 
+.preparation-time-container ul{
+    margin: 10px;
+}
+.preparation-time-container li{
+    margin: 8px;
+}
+
+li{
+    list-style-type: none;
+}
+
+li::before{
+    content:"\2022";
+    margin: 4px;
+    color: var(--Brown800);
+}
+
+.content .instructions{
+    margin: 20px;
+}
+.instructions ol li{
+    margin: 10px;
+}
+
+.content .nutrition{
+    margin: 20px;
+}
+.nutrition table{
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1.3em;
+}
+.medidas{
+    color: var(--Brown800);
+    font-weight: bold;
+}
+.nutrition td{
+    border-collapse: collapse;
+    border-bottom: 1px solid var(--Stone150);
+}
+@media screen and (max-width: 768px) {
+    .container-recipe{
+        padding: 0px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-recipe{
+        width: 100vw;
+        min-height: 100vh;
+        height: auto;
+    }
+}
