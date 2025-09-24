@@ -1,3 +1,5 @@
+/*CONFIGURAÇÕES GERAIS*/
+
 :root{    
     /*Primary*/
     --Red500: hsl(356, 100%, 66%);
@@ -28,7 +30,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: var(--White);
+    min-height: 100vh;
 }
+
 
 /*PARTE DELIMITADA PARA O HEADER*/
 
@@ -36,22 +41,24 @@ body{
 header{
     background-color: var(--Orange300);
     border-bottom-left-radius: 80px;
-    height: 400px;
+    height: 550px;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: var(--White);
     background-image: url('./images/bg-pattern-intro-desktop.svg');
-    background-position: center left;
-
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: 0.8s;
 }
 .container-header-main{
     padding: 14px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: start;
-    width: 50%;
+    width: 70%;
 }
 .container-header-main .menu{
     display: flex;
@@ -157,4 +164,93 @@ button{
     color: var(--Gray900);
 }
 
+/*------------------------------------------------------------------------*/
+/*PARTE DELIMITADA PARA O MAIN*/
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-designed-future{
+    margin: 20px;
+    overflow: hidden;
+}
+h1{
+    text-align: center;   
+}
+
+.container-designed-future div{
+    display: flex;
+    flex-direction: row;
+}
+.container-designed-future .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    width: 100%;
+}
+.container-designed-future .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container-designed-future .img img{
+    position: relative;
+    left: 40%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.container-designed-future .content article{
+    margin:15px;
+}
+.container-designed-future .content article h2{
+    margin-bottom: 15px;
+}
+.container-designed-future .content article p{
+    line-height: 1.4em;
+}
+.container-state-infrastructure{
+    background-color: var(--Purple950);
+    border-top-right-radius: 170px;
+    border-bottom-left-radius: 170px;
+
+    /*flexbox*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    /*imagem de fundo do circulo*/
+    background-image: url('./images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 330px;
+    color: white;
+}
+.container-state-infrastructure .img{
+    position: relative;
+    top: -44%;
+    left: -4%;
+}
+.container-state-infrastructure .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.container-state-infrastructure .content h2{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.container-state-infrastructure .content p{
+    line-height: 1.4em;
+}
+
+.container-free-simples{
+
+}
 /*------------------------------------------------------------------------*/
