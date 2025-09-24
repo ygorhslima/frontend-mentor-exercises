@@ -32,8 +32,8 @@ Background gradient - intro/CTA mobile nav:
 
 Background gradient - body:
 
-- Purple 950: hsl(237, 17%, 21%)
-- Purple 900: hsl(237, 23%, 31%)
+--Purple 950: hsl(237, 17%, 21%);
+--Purple 900: hsl(237, 23%, 31%);
 
 ## Typography
 

@@ -1,0 +1,135 @@
+:root{    
+    /*Primary*/
+    --Red500: hsl(356, 100%, 66%);
+    --Red400: hsl(355, 100%, 74%);
+    --Blue900: hsl(208, 49%, 24%);
+
+    /*neutral*/
+    --White: hsl(0, 100%, 100%);
+    --Gray600: hsl(207, 13%, 34%);
+    --Gray900: hsl(240, 10%, 16%);
+
+    /*Gradients*/
+    /*Background gradient - intro/CTA mobile nav:*/
+    --Orange300: hsl(13, 100%, 72%);
+    --Red550: hsl(353, 100%, 62%);
+
+    --Purple950: hsl(237, 17%, 21%);
+    --Purple900: hsl(237, 23%, 31%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: var(--Orange300);
+    border-bottom-left-radius: 80px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--White);
+    background-image: url('./images/bg-pattern-intro-desktop.svg');
+    background-position: center left;
+
+}
+.container-header-main{
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 50%;
+}
+.container-header-main .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-header-main .menu img{
+    margin-right: 30px;
+}
+.container-header-main .menu select{
+    color: var(--White);
+    border: none;
+    background: none;
+    margin: 10px;
+    font-size: 24px;
+    transition: 0.3s;
+    padding: 3px;
+    border-radius: 20px;
+}
+.menu select:hover{
+    background-color: var(--Blue900);
+    border-radius: 20px;
+    padding: 3px;
+}
+.container-header-main div button {
+    color: var(--White);
+    border: none;
+    border-radius: 20px;
+    background: none;
+    font-size: 24px;
+}
+.btn_sign_up{
+    background-color: white !important;
+    color: var(--Orange300) !important;
+    padding-right:15px;
+    padding-left:15px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+.content-header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.content-header h1{
+    margin: 10px;
+    font-size: 2.6em;
+}
+.content-header p{
+    margin: 14px;
+    font-size: 1.2em;
+}
+.content-header button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.8s;
+}
+button{
+    cursor: pointer;
+}
+.content-header .btn_start_free{
+    background-color: var(--White);
+    color: var(--Orange300);
+}
+
+.content-header .btn_start_free:hover{
+    background-color: var(--Gray900);
+    color: var(--White); 
+}
+
+.content-header .btn_learn_more{
+    background:none;
+    border:1px solid var(--White);
+    color: var(--White);
+}
+
+.content-header .btn_learn_more:hover{
+    background-color: var(--White);
+    color: var(--Gray900);
+}
