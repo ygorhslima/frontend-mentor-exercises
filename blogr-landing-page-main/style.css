@@ -26,12 +26,12 @@
     box-sizing: border-box;
 }
 body{
-    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     background-color: var(--White);
     min-height: 100vh;
+    color: var(--Purple950);
 }
 
 
@@ -50,7 +50,6 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transition: 0.8s;
 }
 .container-header-main{
     padding: 14px;
@@ -251,6 +250,70 @@ h1{
 }
 
 .container-free-simples{
-
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
 }
+
+.container-free-simples .img{
+    position: relative;
+    right: 14%;
+}
+.container-free-simples .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-free-simples .content article{
+    margin: 20px;
+}
+.container-free-simples .content article h2{
+    margin-bottom: 15px;
+}
+.container-free-simples .content article p{
+    line-height: 1.5em;
+}
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*PARTE DELIMITADA PARA O FOOTER*/
+
+footer{
+    background-color: var(--Gray900);
+    height: 300px;
+    color: var(--White);
+    border-top-right-radius: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer .img{
+    margin: 20px;
+    height: 30%;
+}
+.container{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.container-links{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap: 10px;
+    width: 100%;
+}
+.container-links a{
+    text-decoration: none;
+    color: var(--White);
+}
+.container-links a:hover{
+    text-decoration: underline;
+}
+
 /*------------------------------------------------------------------------*/
