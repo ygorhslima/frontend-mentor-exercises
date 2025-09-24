@@ -14,7 +14,7 @@
     <div class="container-header-main">
       <div class="menu">
         <img src="images/logo.svg" alt="blogr">
-        
+
         <select id="product">
           <option value="Product" selected>Product</option>
           <option value="Overview">Overview</option>
@@ -75,7 +75,10 @@
           </article>
         </div>
         <div class="img">
-          <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop">
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/illustration-editor-mobile.svg">
+            <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop">
+          </picture>
         </div>
       </div>
     </section>
@@ -92,7 +95,10 @@
     
     <section class="container-free-simples">
         <div class="img">
-          <img src="images/illustration-laptop-desktop.svg" alt="">
+          <picture>
+            <source media="(max-width: 768px)" srcset="./imagens/illustration-laptop-mobile.svg">
+            <img src="images/illustration-laptop-desktop.svg" alt="">
+          </picture>
         </div>
         <div class="content">
           <article>

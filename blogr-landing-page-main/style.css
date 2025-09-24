@@ -317,3 +317,100 @@ footer .img{
 }
 
 /*------------------------------------------------------------------------*/
+
+@media screen and (max-width:768px){
+    header{
+        background-image: url('images/bg-pattern-intro-mobile.svg');
+        height: auto; /* deixa o header crescer conforme o conteúdo */
+        padding-bottom: 40px;
+    }
+
+    /* esconde menu e botões no mobile (pode substituir por hamburger depois) */
+    .container-header-main .menu select,
+    .container-header-main > div {
+        display: none;
+    }
+
+    .content-header h1{
+        font-size: 1.9em;
+        text-align: center;
+    }
+    .content-header p{
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    /* --- section Designed for the future --- */
+    .container-designed-future > div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .container-designed-future .content {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .container-designed-future .img img{
+        left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* --- section State of Infrastructure --- */
+    .container-state-infrastructure {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 40px 20px;
+        border-radius: 0; /* remove cantos exagerados no mobile */
+    }
+    .container-state-infrastructure .img {
+        position: static;
+        margin-bottom: 20px;
+    }
+    .container-state-infrastructure .img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container-state-infrastructure .content {
+        width: 100%;
+    }
+
+    /* --- section Free & Simple --- */
+    .container-free-simples {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .container-free-simples .img {
+        position: static;
+        margin-bottom: 20px;
+    }
+    .container-free-simples .img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container-free-simples .content {
+        width: 100%;
+    }
+
+    /* --- footer --- */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px 20px;
+        border-radius: 0;
+    }
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    footer .container-links {
+        align-items: center;
+    }
+}
