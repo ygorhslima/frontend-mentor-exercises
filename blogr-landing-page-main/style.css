@@ -29,6 +29,10 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+/*PARTE DELIMITADA PARA O HEADER*/
+
+/*------------------------------------------------------------------------*/
 header{
     background-color: var(--Orange300);
     border-bottom-left-radius: 80px;
@@ -79,6 +83,17 @@ header{
     background: none;
     font-size: 24px;
 }
+.btn_login{
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+.btn_login:hover{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--Gray900);
+    color: var(--White);
+}
 .btn_sign_up{
     background-color: white !important;
     color: var(--Orange300) !important;
@@ -87,6 +102,11 @@ header{
     padding-top:5px;
     padding-bottom: 5px;
     margin: 10px;
+    transition: 0.7s;
+}
+.btn_sign_up:hover{
+    background-color: rgba(255, 255, 255, 0.329) !important;
+    color: var(--Gray900)!important;
 }
 
 .content-header{
@@ -103,6 +123,9 @@ header{
 .content-header p{
     margin: 14px;
     font-size: 1.2em;
+}
+.content-header div{
+    margin: 15px;
 }
 .content-header button{
     border: none;
@@ -133,3 +156,5 @@ button{
     background-color: var(--White);
     color: var(--Gray900);
 }
+
+/*------------------------------------------------------------------------*/
