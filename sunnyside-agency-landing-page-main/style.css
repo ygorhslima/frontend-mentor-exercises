@@ -138,9 +138,10 @@ main{
     color: var(--Grey600);
     font-size: 1.3em;
 }
-.link-info a{
+.link-info {
     text-decoration:none;
-    color: var(--Green800);
+    color: var(--Grey950);
+    padding: 10px;
 }
 
 #d1{
