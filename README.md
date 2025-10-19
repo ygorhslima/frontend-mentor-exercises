@@ -11,17 +11,20 @@ Abaixo está a lista de projetos que finalizei até agora. Clique no nome de cad
 - **[Age Calculator App](https://ygorhslima.github.io/frontend-mentor-exercises/age-calculator-app-main/)**: Uma aplicação que calcula a idade de uma pessoa em anos, meses e dias.
 - **[Bento Grid](https://ygorhslima.github.io/frontend-mentor-exercises/bento-grid-main/)**: Uma página com layout em estilo bento grid, praticando CSS Grid.
 - **[Blog Preview Card](https://ygorhslima.github.io/frontend-mentor-exercises/blog-preview-card-main/)**: Um card de pré-visualização para um post de blog.
+- **[Blogr Landing Page](https://ygorhslima.github.io/frontend-mentor-exercises/blogr-landing-page-main/)**: Uma landing page para a plataforma Blogr, com menus dropdown e design responsivo.
 - **[Conference Ticket Generator](https://ygorhslima.github.io/frontend-mentor-exercises/conference-ticket-generator-main/)**: Um gerador de tickets para conferências a partir de um formulário.
-- **[faq-accordion](https://ygorhslima.github.io/frontend-mentor-exercises/faq-accordion-main/)**: Um painel de perguntas e respostas com um acordeão para mostrar e ocultar a resposta correta
+- **[FAQ Accordion](https://ygorhslima.github.io/frontend-mentor-exercises/faq-accordion-main/)**: Um painel de perguntas e respostas com um acordeão para mostrar e ocultar a resposta correta.
 - **[Interactive Card Details Form](https://ygorhslima.github.io/frontend-mentor-exercises/interactive-card-details-form-main/)**: Um formulário interativo para detalhes de cartão de crédito com atualizações em tempo real.
-- **[Intro Section With Dropdown Navigation Main](https://ygorhslima.github.io/frontend-mentor-exercises/intro-section-with-dropdown-navigation-main/intro-section-with-dropdown-navigation-main/index.html)**: Um site responsivo utilizando bootstrap para criação de dropdowns no menu do site
-- **[mortgage-repayment-calculator](https://ygorhslima.github.io/frontend-mentor-exercises/mortgage-repayment-calculator-main/)**: Um calculador de pagamento de empréstimo 
+- **[Interactive Rating Component](https://ygorhslima.github.io/frontend-mentor-exercises/projects-newbie/interactive-rating-component-main/)**: Projeto simples para avaliação de 0 a 5 estrelas.
+- **[Intro Section With Dropdown Navigation](https://ygorhslima.github.io/frontend-mentor-exercises/intro-section-with-dropdown-navigation-main/intro-section-with-dropdown-navigation-main/index.html)**: Um site responsivo utilizando bootstrap para criação de dropdowns no menu do site.
+- **[Mortgage Repayment Calculator](https://ygorhslima.github.io/frontend-mentor-exercises/mortgage-repayment-calculator-main/)**: Um calculador de pagamento de empréstimo.
 - **[News Homepage](https://ygorhslima.github.io/frontend-mentor-exercises/news-homepage-main/)**: Uma página inicial para um site de notícias com layout responsivo.
 - **[Newsletter Sign-up with Success Message](https://ygorhslima.github.io/frontend-mentor-exercises/newsletter-sign-up-with-success-message-main/)**: Um formulário de inscrição para newsletter com mensagem de sucesso e validação de e-mail.
-- **[Space Tourism Website Figma](https://ygorhslima.github.io/frontend-mentor-exercises/space-tourism-website-figma/src/index.html)**: um site completo, interativo e imersivo de um tour de uma agência espacial, utilizando técnicas de animações e transform CSS
-- **[Interactive rating component main](https://ygorhslima.github.io/frontend-mentor-exercises/projects-newbie/interactive-rating-component-main/)**: projeto simples para avaliação de 0 a 5 estrelas
-- **[Product preview card component main](https://ygorhslima.github.io/frontend-mentor-exercises/projects-newbie/product-preview-card-component-main/)**: template de um componente onde temos um preço do produto de um perfume específico dentro de um site de perfumaria
-- **[qr code component main](https://ygorhslima.github.io/frontend-mentor-exercises/projects-newbie/qr-code-component-main/)**: mostra um qr code que leva ao site do frontend mentor 
+- **[Product Preview Card Component](https://ygorhslima.github.io/frontend-mentor-exercises/projects-newbie/product-preview-card-component-main/)**: Template de um componente onde temos um preço do produto de um perfume específico dentro de um site de perfumaria.
+- **[QR Code Component](https://ygorhslima.github.io/frontend-mentor-exercises/projects-newbie/qr-code-component-main/)**: Mostra um QR code que leva ao site do Frontend Mentor.
+- **[Recipe Page](https://ygorhslima.github.io/frontend-mentor-exercises/projects-newbie/recipe-page-main/)**: Uma página de receita simples e elegante, ideal para praticar HTML semântico e CSS básico.
+- **[Space Tourism Website](https://ygorhslima.github.io/frontend-mentor-exercises/space-tourism-website-figma/src/index.html)**: Um site completo, interativo e imersivo de um tour de uma agência espacial, utilizando técnicas de animações e transform CSS.
+- **[Sunnyside Agency Landing Page](https://ygorhslima.github.io/frontend-mentor-exercises/sunnyside-agency-landing-page-main/)**: Uma landing page para a agência Sunnyside, focada em layout responsivo com HTML e CSS.
 
 ---
 Codificado por Ygor.
