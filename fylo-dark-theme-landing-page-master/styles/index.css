@@ -1,0 +1,39 @@
+/*generals settings*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*intro and email sign up background*/
+    --Navy850: hsl(217, 28%, 15%);
+
+    /*main background*/
+    --Navy900:hsl(218, 28%, 13%);
+
+    /*footer background */
+    --Navy950: hsl(216, 53%, 9%);
+
+    /*testimonials background*/
+    --Navy800: hsl(219, 30%, 18%);
+
+    /*inside call-to-action gradient*/
+    --Teal200: hsl(176, 68%, 64%);
+    --Cyan500: hsl(198, 60%, 50%);
+
+    --Red500: hsl(0, 100%, 63%); /*error*/
+    --White: hsl(0, 0%, 100%);
+    
+    /*default fonts*/
+    /*Headings,Call-to-actions, Header Navigation*/
+    --font-1: "Raleway", sans-serif;
+
+    /*Body*/
+    --font-2: "Open Sans", sans-serif;
+    
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
