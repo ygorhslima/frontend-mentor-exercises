@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
   <link rel="stylesheet" href="styles/mobile.css">
-  <link rel="stylesheet" href="styles/desktop.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
   <header>
@@ -20,6 +20,7 @@
         <a href="#">Sign In</a>
       </nav>
   </header>
+  
   <main>
     <section class="section_intro">
       <div class="img_intro">
@@ -82,7 +83,7 @@
       </article>
 
       <article class="advantage">
-        <div class="img_advantage">
+        <div class="img_advantage_bg">
           <img src="images/illustration-stay-productive.png" alt="icon-security">
         </div>
         <div class="content_advantage">
@@ -135,36 +136,57 @@
         </div>
       </article>
     </section>
+
+    <section class="section_forms">
+      <div class="form">
+        <h1>Get early access today</h1>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+        </p>
+        <input type="text" class="email">
+        <button>Get Started For Free</button>
+      </div>
+    </section>
   </main>
 
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-  questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <img src="images/logo.svg" alt="">
+    
+    <div class="description">
+      <img src="images/icon-location.svg" alt="">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+    </div>
+
+    <div class="">
+      <div>
+        <img src="images/icon-phone.svg" alt="icon-phone">
+        <span>+1-543-123-4567</span>
+      </div>
+
+      <div>
+        <img src="images/icon-email.svg" alt="email">
+        <span>example@fylo.com</span>
+      </div>
+    </div>
+
+    <div class="footer_links">
+      <div>
+        <a href="#">About Us</a>
+        <a href="#">Jobs</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+      </div>
+      <div>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+
+
+
   </footer>
 </body>
 </html>

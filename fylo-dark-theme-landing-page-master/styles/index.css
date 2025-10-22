@@ -28,12 +28,86 @@
 
     /*Body*/
     --font-2: "Open Sans", sans-serif;
-    
-    
 }
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Navy900);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: var(--font-1);
+    color: var(--White);
+}
+header nav a{
+    text-decoration: none;
+    color: var(--White);
+    margin: 10px;
+    transition: 0.2s;
+}
+header nav a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main{
+    color: var(--White);
+}
+ 
+h1,h2{
+    font-family: var(--font-1);
+}
+p{
+    font-family: var(--font-2);
+}
+
+.section_intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.section_intro .content{
+    text-align: center;
+    margin: 30px;
+    width: 100%;
+}
+.section_intro .content h1{
+    font-size: 1.7em;
+}
+.section_intro .content p{
+    margin: 15px 0px 15px 0px;
+    width: 100%;
+}
+
+.section_intro .btn_intro{
+    padding:20px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--Cyan500);
+    color: white;
+    transition: 0.7s;
+}
+.section_intro .btn_intro:hover{
+    background-image: linear-gradient(to right, var(--Teal200), var(--Cyan500));
+}
+
+
+.section_advantages .advantage .content_advantage .description_advantage{
+    margin-top: 10px;
+}
+
+footer{
+    color: var(--White);
 }
