@@ -70,7 +70,31 @@
     .section_advantages .advantage .content_advantage{
         padding: 20px;
     }
+    
+    .section_advantages .advantage .content_advantage_productive{
+        padding: 20px;
+        text-align: start;
+    }
+    .section_advantages .advantage .content_advantage_productive p{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .section_advantages .advantage .content_advantage_productive a{
+        display: block;
+        display: flex;
+        gap: 5px;
+        text-decoration: none;
+        color: var(--Teal200);
+        border-bottom: 1px solid var(--Teal200);
+        width: 35%;
+    }
+
     .section_advantages .img_advantage_bg img{
         width: 100%;
     }
+
+    .section_testimonials{
+        flex-direction: column;   
+    }
+
 }

@@ -103,9 +103,28 @@ p{
     background-image: linear-gradient(to right, var(--Teal200), var(--Cyan500));
 }
 
+.section_advantages{
 
+}
+
+.section_advantages .advantage{
+    align-content: center;
+    justify-items: center;
+    margin: auto;
+    width: 100%;
+}
 .section_advantages .advantage .content_advantage .description_advantage{
     margin-top: 10px;
+}
+
+.section_testimonials{
+    display: flex;
+    gap: 10px;
+}
+.section_testimonials .testimonials{
+    background-color: var(--Navy800);
+    box-shadow: 1px 1px 10px var(--Navy900);
+    margin: 20px;
 }
 
 footer{
