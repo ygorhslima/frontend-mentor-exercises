@@ -127,7 +127,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 90%;
 }
 
 .section_advantages #article-5 div{
@@ -144,6 +144,7 @@ p{
 .section_testimonials{
     display: flex;
     gap: 10px;
+    padding: 20px;
     background-color: var(--Navy800);
 }
 .section_testimonials .testimonials{
@@ -166,6 +167,54 @@ p{
 }
 
 footer{
+    display: flex;
+    flex-direction: column;
     color: var(--White);
     background-color: var(--Navy950);
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+}
+
+footer .logo_footer{
+    width: 90%;
+}
+footer .content{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .content .description{
+    width: 20%;
+}
+footer .content .info{
+    display: flex;
+    flex-direction: column;
+}
+footer .content .footer_links{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+footer .content .footer_links div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .content .footer_links div a{
+    text-decoration:none;
+    color: var(--White);
+    font-family: var(--font-2);
+}
+
+footer .content .social a{
+    transition: 0.7s;
+    text-decoration: none;
+    color: var(--White);
+}
+footer .content .social a:hover{
+    color: var(--Cyan500);
 }
