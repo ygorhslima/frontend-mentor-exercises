@@ -53,6 +53,7 @@
         font-size: 20px;
         width: 90% !important;
     }
+    
     .section_advantages{
         display: flex !important; 
         flex-direction: column !important;
@@ -60,34 +61,46 @@
         align-items: center !important;
         gap: 40px !important;
     }
+    
     .section_advantages .advantage{
-        display: flex !important; 
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        width: 100% !important;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
     }
+    
     .section_advantages .advantage .content_advantage{
-        padding: 20px !important;
+        padding: 20px;
+    }
+
+    #article-5 div{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #article-5 div .content_advantage_productive{
+      width: 100% !important;
     }
     
     .section_advantages .advantage .content_advantage_productive{
         padding: 20px !important;
         text-align: start !important;
     }
+    
     .section_advantages .advantage .content_advantage_productive p{
         margin-top: 15px !important;
         margin-bottom: 10px !important;
     }
+    
     .section_advantages .advantage .content_advantage_productive a{
-        display: block;
-        display: flex;
+        display: flex !important;
         gap: 5px;
         text-decoration: none;
         color: var(--Teal200);
         border-bottom: 1px solid var(--Teal200);
-        width: 35%;
+        width: 100% !important;
     }
 
     .section_advantages .img_advantage_bg img{
@@ -103,6 +116,7 @@
         padding: 20px;
         margin: auto;
         background-color: var(--Navy900);
+        width: 100% !important;
     }
     .section_forms .form{
         display: flex;
@@ -110,6 +124,7 @@
         align-items: center;
         justify-content: center;
         margin: 10px;
+        width: 100%;
     }
     .section_forms .form form .email{
         padding: 10px;
@@ -122,8 +137,93 @@
         flex-direction: column;   
     }
 
-    footer{
-        
+    footer {
+        background-color: var(--Navy950);
+        padding: 40px 20px;
+        color: var(--White);
     }
+
+  footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    margin: 0;
+  }
+
+  footer .logo_footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .description {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  footer .description .icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+  }
+
+  footer .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer .info div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  footer .footer_links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer .footer_links div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  footer .footer_links a {
+    text-decoration: none;
+    color: var(--White);
+    transition: 0.3s;
+  }
+
+  footer .footer_links a:hover {
+    color: var(--Cyan500);
+  }
+
+  footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  footer .social a {
+    text-decoration: none;
+    color: var(--White);
+    font-size: 1.3em;
+    transition: 0.3s;
+  }
+
+  footer .social a:hover {
+    color: var(--Cyan500);
+  }
 
 }
