@@ -34,6 +34,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-size: 1.0em;
     }
     header{
         width: 90%;
@@ -48,16 +49,16 @@
     .section_intro .img_intro img{
         width: 100%;
     }
-    .section_intro .btn_intro{
-        font-size: 32px;
-        width: 80%;
+    .btn_start{
+        font-size: 20px;
+        width: 90% !important;
     }
     .section_advantages{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
+        display: flex !important; 
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 40px !important;
     }
     .section_advantages .advantage{
         display: flex;
@@ -91,6 +92,30 @@
 
     .section_advantages .img_advantage_bg img{
         width: 100%;
+    }
+
+
+    .section_forms{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin: auto;
+        background-color: var(--Navy900);
+    }
+    .section_forms .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .section_forms .form form .email{
+        padding: 10px;
+        border-radius: 20px;
+        width: 90%;
+        margin: 10px;
     }
 
     .section_testimonials{
