@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /*primary*/
+    --Red400: hsl(0, 100%, 68%);
+    --Blue950: hsl(230, 29%, 20%);
+
+    --Blue100: hsl(207, 33%, 95%);
+    --font-1:"Barlow Condensed", sans-serif;
+    --font-2:"Barlow",sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-2);
+    background-color: white;
+}
+
+h1{
+    font-family: var(--font-1);
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin:20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--Blue950);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 14px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-content{
+
+}
+.container-content .title{
+
+}
+.container-content .title h1{
+    color: var(--Blue950);
+    font-size: 4.8em;
+    text-transform: uppercase;
+}
+
+.container-content .title .new span{
+    border-radius: 20px;
+    background-color: var(--Blue950);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    letter-spacing: 0px !important;
+}
+.container-content .title .new {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
