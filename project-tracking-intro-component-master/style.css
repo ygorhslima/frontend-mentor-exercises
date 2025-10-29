@@ -61,12 +61,6 @@ main {
   background: linear-gradient(to right, white 50%, var(--Blue100) 50%);
 }
 
-.container-content{
-
-}
-.container-content .title{
-
-}
 .container-content .title h1{
     color: var(--Blue950);
     font-size: 4.8em;
