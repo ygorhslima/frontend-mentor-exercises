@@ -63,6 +63,15 @@ header .menu nav a{
     cursor: pointer;
     transition: 0.8s;
 }
+
+header .menu nav .btn-contact{
+    background-color: var(--White);
+    color: var(--Grey950);
+    text-transform: uppercase;
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+}
+
 header .menu nav a:hover{
     background-color: rgba(255, 255, 255, 0.411);
 }
