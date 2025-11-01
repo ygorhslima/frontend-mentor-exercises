@@ -32,11 +32,23 @@ h1{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 90%;
     position: fixed;
     top: 0;
+    margin: 10px;
+}
+
+.element{
+    background-color: var(--Blue100);
+    position: absolute;
+    top: 0%;
+    left: 41%;
+    width: 59%;
+    height: 50%;
+    z-index: -1;
+    border-radius: 0px 0px 20px 20px;
 }
 
 header nav a{
@@ -58,7 +70,6 @@ main {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, white 50%, var(--Blue100) 50%);
 }
 
 .container-content .title h1{
