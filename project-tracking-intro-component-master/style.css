@@ -106,12 +106,17 @@ main {
     cursor:pointer;
     transition: 0.7s;
 }
+
 .btn1{
     background-color: var(--Red400);
     color: white;
-
     font-weight: bold;
 }
+
+.btn1:hover{
+    opacity: 0.8;    
+}
+
 .btn2{
     color: black;
     background-color: white;
