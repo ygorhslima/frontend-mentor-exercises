@@ -23,22 +23,29 @@ body{
 }
 
 
-.menu{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.832), rgba(161, 161, 161, 0.523));
-    width: 100vw;
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 100vw;
+  position: relative;
 }
+
+.menu-linha {
+  flex-grow: 1; /* Faz a linha ocupar o espaço entre logo e menu */
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25); /* cor branca transparente */
+  margin: 0 2rem; /* espaçamento entre logo e nav */
+}
+
 
 .menu .menu-navigation .menu-navigation__nav{
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.832), rgba(161, 161, 161, 0.523));
 }
 .menu-navigation__nav a{
     display: flex;
