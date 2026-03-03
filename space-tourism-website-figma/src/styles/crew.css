@@ -14,19 +14,12 @@ body{
     padding: 0;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-}
-
 main .title-crew{
     font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    margin-left: 40px;
 }
 
 main .title-crew p > span{

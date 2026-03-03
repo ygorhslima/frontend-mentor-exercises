@@ -14,14 +14,16 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: var(--fonte-padrao);
+    overflow: hidden;
 }
 
 
 body{
     background-color: black;
     color: white;
+    min-height: 100%;
+    font-size: 0.8rem;
 }
-
 
 .menu {
   display: flex;
@@ -29,7 +31,9 @@ body{
   justify-content: space-between;
   padding: 5px;
   width: 100vw;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .menu-linha {

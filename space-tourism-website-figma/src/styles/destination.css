@@ -21,9 +21,9 @@ body {
 main {
     display: flex; /* Layout flexível */
     flex-direction: column; /* Elementos em coluna */
-    width: 100vw; /* Largura total da viewport */
-    min-height: 100vh; /* Altura mínima de uma tela inteira */
-    padding: 60px 10vw; /* Espaçamento interno */
+    min-width: 100%; /* Largura total da viewport */
+    min-height: 100%; /* Altura mínima de uma tela inteira */
+    padding: 10px 2vw; /* Espaçamento interno */
     box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
 }
 
