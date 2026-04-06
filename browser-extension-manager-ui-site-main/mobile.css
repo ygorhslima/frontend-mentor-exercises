@@ -1,0 +1,12 @@
+@media screen and (max-width:600px) {
+    main .extensions-list-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extensions-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }    
+}
